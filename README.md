@@ -1,44 +1,44 @@
-# HTTP Status Checker - Frontend Developer Test
+# 🚦 HTTP Status Checker - Frontend Developer Test 🚦
 
-[Versión en Español](./README.es.md)
+[🇪🇸 Versión en Español](./README.es.md)
 
-## Welcome!
+## 👋 Welcome!
 
-Hello and welcome to the HTTP Status Checker Limbip code challenge! This project is designed to evaluate your React skills, as well as your ability to solve problems and write clean, maintainable code. The challenge is available in both TypeScript and JavaScript versions. While you can choose either version, TypeScript knowledge will be particularly valuable for your future work with us.
+Hello and welcome to the HTTP Status Checker Limbip code challenge! ✨ This project is designed to evaluate your React skills, as well as your ability to solve problems and write clean, maintainable code. The challenge is available in both **TypeScript** and **JavaScript** versions. While you can choose either version, TypeScript knowledge will be particularly valuable for your future work with us. 🚀
 
-## Project Overview
+## 🔍 Project Overview
 
 This application is a simple HTTP Status Code Checker with a traffic light visualization. The user can input an HTTP status code or status name (like "ok" or "not found"), and the app will display:
 
-- A traffic light that changes color based on the status (green for success, red for errors)
-- Status information with details about the code category and meaning
-- On mobile devices, an info button that opens a modal with status details
+- 🚦 A traffic light that changes color based on the status (green for success, red for errors)
+- 📋 Status information with details about the code category and meaning
+- 📱 On mobile devices, an info button that opens a modal with status details
 
-## Your Tasks
+## ✅ Your Tasks
 
-The application has a few bugs and missing features that you need to fix and implement. We've included tests that will help you identify some of the issues.
+The application has a few bugs and missing features that you need to fix and implement. We've included tests that will help you identify some of the issues. 🐛
 
-### 1. Fix the Existing Bugs
+### 1. 🔧 Fix the Existing Bugs
 
 There are several bugs in the application that need to be fixed:
 
-- **Test Failures**: Run `npm test` to see the failing tests. You need to fix the code to make these tests pass.
-- **Desktop Layout**: The app is currently aligned to the left side on desktop view. It should be centered on the screen.
-- **Modal Display**: On mobile view, when clicking the info button, the modal should display the status information, but it currently doesn't show the content correctly.
+- 🧪 **Test Failures**: Run `npm test` to see the failing tests. You need to fix the code to make these tests pass.
+- 🖥️ **Desktop Layout**: The app is currently aligned to the left side on desktop view. It should be centered on the screen.
+- 📱 **Modal Display**: On mobile view, when clicking the info button, the modal should display the status information, but it currently doesn't show the content correctly.
 
-### 2. Add New Functionality
+### 2. ✨ Add New Functionality
 
 Implement the following new features:
 
-- **URL Validation and Status Check**:
+- 🔗 **URL Validation and Status Check**:
   - Modify the text input to accept a URL
   - If the input is a valid URL, make a request to that URL and extract the response status code
   - Update the traffic light based on the response (green if reachable, red if an error occurs)
   - In the info modal/card, add a button to open the URL in a new tab if it's reachable
 
-- **Status Code History with Chart Visualization**:
+- 📊 **Status Code History with Chart Visualization**:
   - Implement a custom React hook (`useStatusHistory`) to track the history of checked status codes
-  - Integrate a charting library (like Chart.js or Recharts) to display a visual representation of the status code history
+  - Integrate a charting library (we use [react-charts](https://react-chartjs-2.js.org/)) to display a visual representation of the status code history
   - Add a "History" button that opens a modal showing the chart
   - The chart should display at least the last 10 status codes checked, with different colors for different status categories (2xx, 4xx, 5xx)
 
@@ -65,12 +65,12 @@ If you have any questions about the test, feel free to contact us via email.
 
 ## What We Value
 
-- **React, TypeScript, and Vite Best Practices**: Clean code, proper component structure, and effective use of TypeScript
-- **Testing**: Writing and fixing tests, test-driven development approach
-- **Git Knowledge**: Proper commit messages, branching strategy
-- **Problem-Solving Skills**: How you approach and solve the bugs and implement new features
-- **Attention to Detail**: UI/UX considerations, responsive design
-- **Communication**: Clear documentation, code comments (if are really needed)
+- 🚀 **React, TypeScript, and Vite Best Practices**: Clean code, proper component structure, and effective use of TypeScript
+- 🧪 **Testing**: Writing and fixing tests, test-driven development approach
+- 📚 **Git Knowledge**: Proper commit messages, branching strategy
+- 🧠 **Problem-Solving Skills**: How you approach and solve the bugs and implement new features
+- 📱 **Attention to Detail**: UI/UX considerations, responsive design
+- 📝 **Communication**: Clear documentation, code comments (if are really needed)
 
 ## Task Checklist
 
