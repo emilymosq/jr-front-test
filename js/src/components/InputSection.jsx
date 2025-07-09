@@ -1,12 +1,6 @@
 import React from 'react';
 
-interface InputSectionProps {
-  inputValue: string;
-  onInputChange: (value: string) => void;
-  onCheckStatus: () => void;
-}
-
-const InputSection: React.FC<InputSectionProps> = ({ 
+const InputSection = ({ 
   inputValue, 
   onInputChange, 
   onCheckStatus 

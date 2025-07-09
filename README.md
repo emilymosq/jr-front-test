@@ -4,7 +4,7 @@
 
 ## Welcome!
 
-Hello and welcome to the HTTP Status Checker Limbip code challenge! This test is designed to evaluate your skills as a junior frontend developer using React, TypeScript, and Vite.
+Hello and welcome to the HTTP Status Checker Limbip code challenge! This project is designed to evaluate your React skills, as well as your ability to solve problems and write clean, maintainable code. The challenge is available in both TypeScript and JavaScript versions. While you can choose either version, TypeScript knowledge will be particularly valuable for your future work with us.
 
 ## Project Overview
 

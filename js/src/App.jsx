@@ -1,4 +1,3 @@
-
 import './App.css'
 import HttpStatusChecker from './components/HttpStatusChecker'
 

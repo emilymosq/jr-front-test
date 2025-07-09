@@ -4,7 +4,7 @@
 
 ## ¡Bienvenido!
 
-Hola y bienvenido al desafío de código HTTP Status Checker de Limbip. Esta prueba está diseñada para evaluar tus habilidades como desarrollador frontend junior utilizando React, TypeScript y Vite.
+¡Hola y bienvenido al Desafío para Desarrollador Frontend Junior de Limbip! Este proyecto está diseñado para evaluar tus habilidades con React, así como tu capacidad para resolver problemas y escribir código limpio y mantenible. El desafío está disponible tanto en versión TypeScript (carpeta `/ts`) como JavaScript (carpeta `/js`). Aunque puedes elegir cualquiera de las versiones, el conocimiento de TypeScript será particularmente valioso para tu futuro trabajo con nosotros.
 
 ## Descripción del Proyecto
 

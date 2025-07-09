@@ -3,7 +3,7 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import HttpStatusChecker from '../HttpStatusChecker';
 
 // Mock the window.innerWidth to test responsive behavior
-const mockWindowInnerWidth = (width: number) => {
+const mockWindowInnerWidth = (width) => {
   Object.defineProperty(window, 'innerWidth', {
     writable: true,
     configurable: true,

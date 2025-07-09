@@ -6,10 +6,7 @@ import StatusInfo from './StatusInfo';
 import InfoButton from './InfoButton';
 import Modal from './Modal';
 
-type TrafficLightStatus = 'green' | 'orange' | 'red' | 'off';
-type StatusCodeCategory = '2xx' | '3xx' | '4xx' | '5xx' | 'invalid';
-
-const statusCodeMap: Record<string, number> = {
+const statusCodeMap = {
   // 2xx - Success
   'ok': 200,
   'created': 201,
@@ -50,10 +47,10 @@ const statusCodeMap: Record<string, number> = {
   'http version not supported': 505
 };
 
-const HttpStatusChecker: React.FC = () => {
+const HttpStatusChecker = () => {
   const [inputValue, setInputValue] = useState('');
-  const [trafficLightStatus, setTrafficLightStatus] = useState<TrafficLightStatus>('off');
-  const [statusCategory, setStatusCategory] = useState<StatusCodeCategory>('invalid');
+  const [trafficLightStatus, setTrafficLightStatus] = useState('off');
+  const [statusCategory, setStatusCategory] = useState('invalid');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   
@@ -75,7 +72,7 @@ const HttpStatusChecker: React.FC = () => {
     };
   }, []);
   
-  const handleInputChange = (value: string) => {
+  const handleInputChange = (value) => {
     setInputValue(value);
   };
   
@@ -87,7 +84,7 @@ const HttpStatusChecker: React.FC = () => {
       return;
     }
     
-    let statusCode: number | null = null;
+    let statusCode = null;
     
     // Check if input is a number
     if (/^\d+$/.test(inputValue)) {

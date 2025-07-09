@@ -1,15 +1,6 @@
 import React from 'react';
 
-type StatusCodeCategory = '2xx' | '3xx' | '4xx' | '5xx' | 'invalid';
-
-interface StatusInfoProps {
-  category: StatusCodeCategory;
-  trafficLightStatus: 'green' | 'orange' | 'red' | 'off';
-  inputValue: string;
-  statusCodeMap: Record<string, number>;
-}
-
-const StatusInfo: React.FC<StatusInfoProps> = ({ 
+const StatusInfo = ({ 
   category, 
   trafficLightStatus, 
   inputValue, 

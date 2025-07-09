@@ -1,10 +1,6 @@
 import React from 'react';
 
-interface InfoButtonProps {
-  onClick: () => void;
-}
-
-const InfoButton: React.FC<InfoButtonProps> = ({ onClick }) => {
+const InfoButton = ({ onClick }) => {
   return (
     <button 
       className="info-button" 

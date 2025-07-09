@@ -1,12 +1,6 @@
 import React from 'react';
 
-type TrafficLightStatus = 'green' | 'orange' | 'red' | 'off';
-
-interface TrafficLightProps {
-  status: TrafficLightStatus;
-}
-
-const TrafficLight: React.FC<TrafficLightProps> = ({ status }) => {
+const TrafficLight = ({ status }) => {
   return (
     <div className="traffic-light-container">
       <div className="traffic-light">
