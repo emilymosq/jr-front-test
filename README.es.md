@@ -65,12 +65,12 @@ Si tienes alguna pregunta sobre la prueba, no dudes en contactarnos por correo e
 
 ## Lo que Valoramos
 
-- 🚀 **Buenas Prácticas de React, TypeScript y Vite**: Código limpio, estructura de componentes adecuada y uso efectivo de TypeScript
-- 🧪 **Pruebas**: Escribir y corregir pruebas, enfoque de desarrollo guiado por pruebas
-- 📚 **Conocimiento de Git**: Mensajes de commit adecuados, estrategia de ramificación
-- 🧠 **Habilidades de Resolución de Problemas**: Cómo abordas y resuelves los errores e implementas nuevas características
-- 📱 **Atención al Detalle**: Consideraciones de UI/UX, diseño responsivo
-- 📝 **Comunicación**: Documentación clara, comentarios en el código
+- 🚀 **Buenas Prácticas de React, TypeScript y Vite**: Código limpio, estructura de componentes adecuada y uso efectivo de TypeScript.
+- 🧪 **Pruebas**: Escribir y corregir test, enfoque de desarrollo guiado por test.
+- 📚 **Conocimiento de Git**: Mensajes de commit adecuados, estrategia de ramificación.
+- 🧠 **Habilidades de Resolución de Problemas**: Cómo abordas y resuelves los errores e implementas nuevas características.
+- 📱 **Atención al Detalle**: Consideraciones de UI/UX, diseño responsivo.
+- 📝 **Comunicación**: Documentación clara, comentarios en el código.
 
 ## Lista de Tareas
 
