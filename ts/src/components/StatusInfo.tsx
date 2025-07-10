@@ -49,7 +49,7 @@ const StatusInfo: React.FC<StatusInfoProps> = ({
           ) : (
               <>
                 <p>The provided status code or name is not valid.</p>
-                <p>Try entering a number between 100–599 or a valid status name.</p>
+                <p>Try entering a number between 100-599 or a valid status name.</p>
               </>
           )}
         </div>
