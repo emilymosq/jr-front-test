@@ -7,20 +7,15 @@ interface StatusInfoProps {
   trafficLightStatus: 'green' | 'orange' | 'red' | 'off';
   inputValue: string;
   statusCodeMap: Record<string, number>;
+  isUrlError?: boolean;
 }
 
 const StatusInfo: React.FC<StatusInfoProps> = ({ 
   category, 
   trafficLightStatus, 
   inputValue, 
-  statusCodeMap 
+  statusCodeMap, isUrlError = false
 }) => {
-  console.log("STATUS INFO RENDERED");
-  console.log("category:", category);
-  console.log("trafficLightStatus:", trafficLightStatus);
-  console.log("inputValue:", inputValue);
-  console.log("input is numeric:", /^\d+$/.test(inputValue));
-  console.log("statusCodeMap match:", statusCodeMap[inputValue.toLowerCase()]);
   return (
     <div className="status-info" >
       {category !== 'invalid' ? (
@@ -43,8 +38,20 @@ const StatusInfo: React.FC<StatusInfoProps> = ({
       ) : trafficLightStatus !== 'off' ? (
         <div className="status-card error">
           <h3>Invalid Input</h3>
-          <p>The provided status code or name is not valid.</p>
-          <p>Try entering a number between 100-599 or a valid status name.</p>
+          {/*He cambiado un poco esta parte, ya que al momento de comprobar la url, puede haber problemas con algunas
+            de las urls por una politica del cors, por lo tanto, he agregado un mensaje distinto aclarando
+            que no es un error del usuario, sino que es por restriccion del navegador. */}
+          {isUrlError ? (
+              <p>
+                The input looks like a valid URL, but we couldn’t get a response.
+                This could be due to CORS restrictions or the server being unreachable.
+              </p>
+          ) : (
+              <>
+                <p>The provided status code or name is not valid.</p>
+                <p>Try entering a number between 100–599 or a valid status name.</p>
+              </>
+          )}
         </div>
       ) : null}
     </div>
