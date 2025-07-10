@@ -24,7 +24,7 @@ describe('HttpStatusChecker Component', () => {
     expect(screen.getByText('HTTP Status Code Checker')).toBeInTheDocument();
     expect(screen.getByRole('textbox')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /check/i })).toBeInTheDocument();
-    expect(screen.getByRole('generic', { name: '' })).toBeInTheDocument(); // Traffic light
+    expect(screen.getByRole('generic', { name: 'traffic-light' })).toBeInTheDocument(); // Traffic light
   });
 
   it('should update traffic light when checking a valid status code', () => {
