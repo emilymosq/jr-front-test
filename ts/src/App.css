@@ -40,6 +40,10 @@ body {
   padding: 1rem;
 }
 
+.title{
+  color: var(--primary-color);
+}
+
 .http-status-checker {
   background-color: white;
   border-radius: 12px;
