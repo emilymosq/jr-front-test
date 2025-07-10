@@ -77,12 +77,12 @@ Si tienes alguna pregunta sobre la prueba, no dudes en contactarnos por correo e
 - [x] Corregir la funcionalidad de la tecla Enter en el componente InputSection
 - [x] Añadir la clase CSS correcta al componente Title
 - [x] Corregir la prueba para el componente HttpStatusChecker
-- [ ] Corregir el problema de visualización del contenido del modal
+- [x] Corregir el problema de visualización del contenido del modal
 - [x] Centrar la aplicación en la vista de escritorio
-- [ ] Implementar la validación de URL y verificación de estado
-- [ ] Añadir un botón para abrir URLs válidas en una nueva pestaña
+- [x] Implementar la validación de URL y verificación de estado
+- [x] Añadir un botón para abrir URLs válidas en una nueva pestaña
 - [ ] Crear un hook personalizado de React para el seguimiento del historial de estados
 - [ ] Integrar una biblioteca de gráficos e implementar la visualización del historial
-- [ ] Asegurar que todas las pruebas pasen
+- [x] Asegurar que todas las pruebas pasen
 
 **Nota**: Si bien esperamos que completes todas las tareas, entendemos que algunas pueden ser desafiantes. Si te quedas atascado en una tarea en particular, puedes pasar a la siguiente y volver más tarde. Lo importante es que demuestres tu enfoque de resolución de problemas y habilidades de codificación. ¡Haz tu mejor esfuerzo!

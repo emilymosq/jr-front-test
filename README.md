@@ -77,12 +77,12 @@ If you have any questions about the test, feel free to contact us via email.
 - [x] Fix the Enter key functionality in the InputSection component
 - [x] Add the correct CSS class to the Title component
 - [x] Fix the test for the HttpStatusChecker component
-- [ ] Fix the modal content display issue
+- [x] Fix the modal content display issue
 - [x] Center the app on desktop view
-- [ ] Implement URL validation and status checking
-- [ ] Add a button to open valid URLs in a new tab
+- [x] Implement URL validation and status checking
+- [x] Add a button to open valid URLs in a new tab
 - [ ] Create a custom React hook for status history tracking
 - [ ] Integrate a charting library and implement the history visualization
-- [ ] Ensure all tests pass
+- [x] Ensure all tests pass
 
 **Note**: While we expect you to complete all tasks, we understand that some might be challenging. If you get stuck on a particular task, you can move on to the next one and come back later. What's important is that you demonstrate your problem-solving approach and coding skills. Do your best!
