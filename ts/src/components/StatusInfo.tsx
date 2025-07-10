@@ -1,4 +1,6 @@
 import React from 'react';
+import OpenUrlButton from "./OpenUrlButton.tsx";
+import {validarURL} from "../utils/urlUtils.tsx";
 
 type StatusCodeCategory = '2xx' | '3xx' | '4xx' | '5xx' | 'invalid';
 
@@ -34,6 +36,11 @@ const StatusInfo: React.FC<StatusInfoProps> = ({
           {category === '3xx' && <p className="status-message">↪ Redirection! Further action is needed.</p>}
           {category === '4xx' && <p className="status-message">✗ Client Error! The request contains bad syntax or cannot be fulfilled.</p>}
           {category === '5xx' && <p className="status-message">✗ Server Error! The server failed to fulfill a valid request.</p>}
+
+          {/*Boton para abrir una url valida. */}
+          {validarURL(inputValue) && (
+              <OpenUrlButton url={inputValue}/>
+          )}
         </div>
       ) : trafficLightStatus !== 'off' ? (
         <div className="status-card error">

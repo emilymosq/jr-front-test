@@ -341,6 +341,20 @@ button:hover {
   margin-top: 0.5rem;
 }
 
+.open-url-button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.open-url-button:hover {
+  background-color: var(--secondary-color);
+}
+
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
