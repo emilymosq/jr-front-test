@@ -74,11 +74,11 @@ If you have any questions about the test, feel free to contact us via email.
 
 ## Task Checklist
 
-- [ ] Fix the Enter key functionality in the InputSection component
-- [ ] Add the correct CSS class to the Title component
-- [ ] Fix the test for the HttpStatusChecker component
+- [x] Fix the Enter key functionality in the InputSection component
+- [x] Add the correct CSS class to the Title component
+- [x] Fix the test for the HttpStatusChecker component
 - [ ] Fix the modal content display issue
-- [ ] Center the app on desktop view
+- [x] Center the app on desktop view
 - [ ] Implement URL validation and status checking
 - [ ] Add a button to open valid URLs in a new tab
 - [ ] Create a custom React hook for status history tracking
