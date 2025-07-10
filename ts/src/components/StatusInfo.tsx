@@ -15,8 +15,14 @@ const StatusInfo: React.FC<StatusInfoProps> = ({
   inputValue, 
   statusCodeMap 
 }) => {
+  console.log("STATUS INFO RENDERED");
+  console.log("category:", category);
+  console.log("trafficLightStatus:", trafficLightStatus);
+  console.log("inputValue:", inputValue);
+  console.log("input is numeric:", /^\d+$/.test(inputValue));
+  console.log("statusCodeMap match:", statusCodeMap[inputValue.toLowerCase()]);
   return (
-    <div className="status-info">
+    <div className="status-info" >
       {category !== 'invalid' ? (
         <div className="status-card">
           <h3>Status Information</h3>

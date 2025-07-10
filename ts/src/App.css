@@ -72,10 +72,12 @@ body {
     max-width: none;
     position: relative;
   }
-  
-  .status-info {
+
+  /*.status-info {
     display: none;
   }
+  Esto lo he eliminado ya que si estaba, no mostraba correctamente la info en la version movil.
+  */
 }
 
 h1 {
