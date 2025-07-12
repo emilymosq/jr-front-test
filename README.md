@@ -81,7 +81,7 @@ If you have any questions about the test, feel free to contact us via email.
 - [x] Center the app on desktop view
 - [x] Implement URL validation and status checking
 - [x] Add a button to open valid URLs in a new tab
-- [ ] Create a custom React hook for status history tracking
+- [x] Create a custom React hook for status history tracking
 - [ ] Integrate a charting library and implement the history visualization
 - [x] Ensure all tests pass
 

@@ -81,7 +81,7 @@ Si tienes alguna pregunta sobre la prueba, no dudes en contactarnos por correo e
 - [x] Centrar la aplicación en la vista de escritorio
 - [x] Implementar la validación de URL y verificación de estado
 - [x] Añadir un botón para abrir URLs válidas en una nueva pestaña
-- [ ] Crear un hook personalizado de React para el seguimiento del historial de estados
+- [x] Crear un hook personalizado de React para el seguimiento del historial de estados
 - [ ] Integrar una biblioteca de gráficos e implementar la visualización del historial
 - [x] Asegurar que todas las pruebas pasen
 
