@@ -6,6 +6,10 @@ import StatusInfo from './StatusInfo';
 import InfoButton from './InfoButton';
 import Modal from './Modal';
 import { validarURL, fetchStatusCode } from '../utils/urlUtils.tsx';
+import HistoryButton from "./HistoryButton.tsx";
+import StatusChart from './StatusChart';
+import { useStatusHistory } from '../hooks/useStatusHistory';
+
 
 type TrafficLightStatus = 'green' | 'orange' | 'red' | 'off';
 type StatusCodeCategory = '2xx' | '3xx' | '4xx' | '5xx' | 'invalid';
@@ -59,6 +63,8 @@ const HttpStatusChecker: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [errorUrlMessage, setErrorUrlMessage] = useState('');
+  const [historyOpen, setHistoryOpen] = useState(false);
+  const { history, addStatus } = useStatusHistory();
 
   // Check if the device is mobile based on screen width
   useEffect(() => {
@@ -123,15 +129,19 @@ const HttpStatusChecker: React.FC = () => {
       if (statusCode >= 200 && statusCode < 300) {
         setTrafficLightStatus('green');
         setStatusCategory('2xx');
+        addStatus(statusCode); //Si el codigo es valido, se guarda en el historial para el grafico.
       } else if (statusCode >= 300 && statusCode < 400) {
         setTrafficLightStatus('green'); // 3xx are also considered successful
         setStatusCategory('3xx');
+        addStatus(statusCode);
       } else if (statusCode >= 400 && statusCode < 500) {
         setTrafficLightStatus('red');
         setStatusCategory('4xx');
+        addStatus(statusCode);
       } else if (statusCode >= 500 && statusCode < 600) {
         setTrafficLightStatus('red');
         setStatusCategory('5xx');
+        addStatus(statusCode);
       } else {
         setTrafficLightStatus('orange');
         setStatusCategory('invalid');
@@ -180,6 +190,15 @@ const HttpStatusChecker: React.FC = () => {
               </Modal>
             </>
         )}
+        {/*El boton para abrir el historial, junto con el modal que lo muestra*/}
+        <HistoryButton
+            onClick={() => setHistoryOpen(true)}
+            //Esto lo he puesto para que al momento de que salga el boton de info, el boton del historial suba para no estar por encima del otro boton.
+            shouldMoveUp={isMobile && trafficLightStatus !== 'off'}
+        />
+        <Modal isOpen={historyOpen} onClose={() => setHistoryOpen(false)}>
+          <StatusChart history={history}/>
+        </Modal>
       </div>
   );
 };

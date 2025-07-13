@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import type {StatusCategory, StatusInterface} from "../interfaces/Status.tsx";
 
+/*He creado un hook personalizado para manejar el historial de codigos http, por ahora
+* la idea es que guarde los 10 mas recientes, con su codigo, categoria y en que tiempo.
+*/
 export const useStatusHistory = () => {
     const [history, setHistory] = useState<StatusInterface[]>([]);
 
